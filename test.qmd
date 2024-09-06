@@ -1,0 +1,8 @@
+---
+title: "Quarto Playground"
+format:
+  pdf:
+    output-ext: test.pdf
+---
+
+This is a playground for Quarto.

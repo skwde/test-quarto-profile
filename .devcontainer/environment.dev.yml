@@ -1,0 +1,17 @@
+name: dev
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python>=3
+  # ## strip output / metadata in git commit
+  - nbconvert
+  # ## other dev tools
+  - pre-commit
+  - nodejs
+  # ## quarto
+  - jupyter
+  # ## need pip >= 10 because starting with pip 10.0 environment variables are allowed in requirements.txt
+  # - pip>=10
+  # - pip:
+  #     - -r requirements-dev.txt

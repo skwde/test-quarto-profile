@@ -1,0 +1,37 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "postCreateCommand": "./.devcontainer/post_create_command.sh",
+    "waitFor": "postCreateCommand",
+    "remoteUser": "user",
+    "remoteEnv": {
+        // add TinyTex to PATH
+        "PATH": "~/.TinyTeX/bin/x86_64-linux:${containerEnv:PATH}"
+    },
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "streetsidesoftware.code-spell-checker",
+                "codezombiech.gitignore",
+                "tomoki1207.pdf",
+                "ms-azuretools.vscode-docker",
+                "joshbolduc.commitlint",
+                "vivaxy.vscode-conventional-commits",
+                "tamasfe.even-better-toml",
+                "mechatroner.rainbow-csv",
+                "ms-toolsai.jupyter",
+                "ms-python.python",
+                "charliermarsh.ruff",
+                "ms-python.black-formatter",
+                "ms-python.vscode-pylance",
+                "timonwong.shellcheck",
+                "davidanson.vscode-markdownlint",
+                "quarto.quarto",
+                "tomoyukim.vscode-mermaid-editor"
+            ]
+        }
+    }
+}

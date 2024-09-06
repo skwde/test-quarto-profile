@@ -1,0 +1,10 @@
+_freeze/
+_output/
+*_files/
+*.html
+*.pdf
+*.tex
+*.aux
+*.log
+/.quarto/
+*.quarto_ipynb
